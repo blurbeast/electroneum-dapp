@@ -2,7 +2,7 @@
 
 import { useReadContract } from 'wagmi';
 import peopleAbi from '@/constants/ABIs/people.json';
-import { PEOPLE_ADDRESS } from '@/constants/addresses';
+import { PEOPLE_ADDRESS } from '@/constants/smart_contract_addresses';
 
 export function useGetPeople() {
   const query = useReadContract({

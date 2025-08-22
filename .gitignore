@@ -1,0 +1,8 @@
+node_modules
+node_modules/*
+node_modules/**
+smart-contract/cache
+smart-contract/typechain-types
+smart-contract/artifacts
+frontend/next-env.d.ts
+frontend/.next

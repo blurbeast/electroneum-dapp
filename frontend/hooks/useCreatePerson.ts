@@ -3,7 +3,7 @@
 import { useState, useMemo } from 'react';
 import { useWriteContract, useWaitForTransactionReceipt } from 'wagmi';
 import peopleAbi from '@/constants/ABIs/people.json';
-import { PEOPLE_ADDRESS } from '@/constants/addresses';
+import { PEOPLE_ADDRESS } from '@/constants/smart_contract_addresses';
 
 export function useCreatePerson() {
   const [hash, setHash] = useState<`0x${string}` | undefined>(undefined);
