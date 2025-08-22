@@ -8,7 +8,7 @@ export function useGetPerson(index?: number) {
   const enabled = typeof index === 'number' && index >= 0;
 
   const query = useReadContract({
-    abi: peopleAbi,
+    abi: peopleAbi ,
     address: PEOPLE_ADDRESS as `0x${string}`,
     functionName: 'getPerson',
     args: enabled ? [BigInt(index!)] : undefined,

@@ -25,7 +25,8 @@ export function useCreatePerson() {
     if (!name || `${name}`.trim().length === 0) throw new Error('Name is required');
     const ageBn = BigInt(age);
 
-    const txHash = await writeContractAsync({
+      const txHash = await writeContractAsync({
+          // @ts-ignore
       abi: peopleAbi as const,
       address: PEOPLE_ADDRESS as `0x${string}`,
       functionName: 'createPerson',

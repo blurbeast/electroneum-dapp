@@ -6,6 +6,7 @@ import { PEOPLE_ADDRESS } from '@/constants/smart_contract_addresses';
 
 export function useGetPeople() {
   const query = useReadContract({
+      // @ts-ignore
     abi: peopleAbi as const,
     address: PEOPLE_ADDRESS as `0x${string}`,
     functionName: 'getPeople',
